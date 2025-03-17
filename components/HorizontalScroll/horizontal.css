@@ -1,0 +1,39 @@
+.carousel {
+    background-color: grey;
+    
+    height: 500vh;
+  }
+  
+  .contentContainer {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  .sections {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr ;
+   
+   
+  }
+  
+  .sectionItem {
+    width: 100vw;
+   
+    height: 100vh;
+    border-radius: 15px; /* Coins arrondis */
+    object-fit: cover;
+  }
+  
+  .imageItem img {
+    width: 950px;
+    height: 550px;
+    border-radius: 15px; /* Coins arrondis */
+    object-fit: cover;
+  }
+  

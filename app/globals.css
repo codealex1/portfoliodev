@@ -24,3 +24,56 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes text-fade {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.animate-text-fade {
+  display: inline-block;
+  background: linear-gradient(90deg, #a0a0a0, #FFD922 ,#a0a0a0); /* Gradient entre plusieurs couleurs */
+  background-size: 200% 100%; /* Crée un large gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: text-fade 2s infinite; /* Animation pour déplacer le gradient */
+}
+
+
+@keyframes text-eject {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-20px); /* Ejection du texte vers le haut */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px); /* Déplacement vers le bas pour l'ancien texte */
+  }
+}
+
+@keyframes text-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Le texte commence en bas */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Le texte arrive à sa position d'origine */
+  }
+}
+
+.text-eject {
+  animation: text-eject 1s ease-out forwards; /* Animation de disparition */
+}
+
+.text-appear {
+  animation: text-appear 1s ease-out forwards; /* Animation de l'apparition */
+}
