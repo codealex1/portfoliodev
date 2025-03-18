@@ -2,9 +2,9 @@
 "use client";
 import React, { useRef } from 'react'
 import './horizontal.css';
-import Section1 from '../Section/SectionScroll';
-import Section2 from '../Section/SectionScroll2';
-import Section3 from '../Section/SectionScroll3';
+import Accueil from '../Section/Accueil';
+import About from '../Section/About';
+import Project from '../Section/Project';
 import {motion , useScroll , useTransform} from 'framer-motion';
 
 import './horizontal.css';
@@ -20,13 +20,13 @@ const HorizontalScroll = () => {
         <div className='contentContainer'>
           <motion.div className='sections' style={{x}}>
               <div className='sectionItem'>
-                <Section1/>
+                <Accueil/>
               </div>
               <div className='sectionItem'>
-               <Section2/>
+               <About/>
               </div> 
               <div className='sectionItem'>
-                <Section3/>
+                <Project/>
               </div> 
               
           </motion.div>

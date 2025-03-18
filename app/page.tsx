@@ -1,7 +1,7 @@
 import HorizontalScroll from "@/components/HorizontalScroll/horizontal";
-import Section from "@/components/Section/section";
-import section from "@/components/Section/section";
-import Section2 from "@/components/Section/section2";
+import Contact from "@/components/Section/Contact";
+import Footer from "@/components/Section/Footer";
+import Skills from "@/components/Section/Skills";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,8 +9,9 @@ export default function Home() {
     <>
     
     <HorizontalScroll></HorizontalScroll>
-    <Section2></Section2>
-
+    <Skills/>
+    <Contact/>
+    <Footer/>
     </>
   );
 }

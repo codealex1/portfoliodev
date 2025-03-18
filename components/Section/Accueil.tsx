@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const roles = ["Fullstack Developer Junior", "Mobile App Developer", "Website Creator"];
 
-const SectionScroll = () => {
+const Accueil = () => {
   const [currentRole, setCurrentRole] = useState(0);
   const [fadeOut, setFadeOut] = useState(false); // Etat pour gérer la transition de texte
 
@@ -16,7 +16,7 @@ const SectionScroll = () => {
         setCurrentRole((prev) => (prev + 1) % roles.length);
         setFadeOut(false); // Le nouveau texte arrive
       }, 500); // Attente pour que l'animation de disparition soit terminée
-    }, 4000); // Change chaque 4 secondes
+    }, 3000); // Change chaque 4 secondes
 
     return () => clearInterval(interval);
   }, []);
@@ -67,7 +67,7 @@ const SectionScroll = () => {
           <div className="w-1 h-6 bg-yellow-500 mr-4"></div>
           <p className="text-sm text-gray-500 relative overflow-hidden whitespace-nowrap">
             <span className="animate-text-fade">
-              Turning lines of code into digital experiences that inspire and innovate.
+              Turning lines of code into digital contents that inspire and innovate.
             </span>
           </p>
         </div>
@@ -82,4 +82,4 @@ const SectionScroll = () => {
   );
 };
 
-export default SectionScroll;
+export default Accueil;
