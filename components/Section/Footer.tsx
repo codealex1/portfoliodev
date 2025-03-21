@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex justify-between">
         <div className="w-1/6 mr-16">
           <h3 className="font-bold mb-2">About Me</h3>
-          <p className="text-gray-400 text-sm">A passionate developer focused on creating innovative solutions and meaningful user experiences.</p>
+          <p className="text-gray-400 text-sm">A passionate student developer focused on creating innovative solutions and meaningful user experiences.</p>
         </div>
         <div className="w-1/4">
           <h3 className="font-bold mb-2">Quick Links</h3>
