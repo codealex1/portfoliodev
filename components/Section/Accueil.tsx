@@ -46,9 +46,13 @@ const Accueil = () => {
 
         {/* Bouton + Logos */}
         <div className="flex items-center gap-6 mt-6">
-          <button className="bg-yellow-600 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition">
+          <a
+            href="/CV-Alexandre-Brunet.pdf"
+            download
+            className="bg-yellow-600 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition"
+          >
             Download Resume
-          </button>
+            </a>
           <div className="flex space-x-4">
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
               <FaGithub className="text-2xl hover:text-yellow-500 transition" />
