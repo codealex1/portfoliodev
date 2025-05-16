@@ -1,6 +1,6 @@
 "use client";
 import React , {useState} from "react";
-import  ConvexLogo  from '../..images/logo/convex.svg';  // Assurez-vous que le chemin est correct
+
 import {
   SiNextdotjs,
   SiTailwindcss,
